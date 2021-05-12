@@ -183,12 +183,12 @@ resource "google_project_iam_member" "jenkins-project" {
 }
 
 data "local_file" "helm_chart_values" {
-  filename = "${path.module}/values1.yaml"
+  filename = "${path.module}/values.yaml"
 }
 resource "helm_release" "jenkins" {
   name       = "jenkins"
   repository = "https://charts.jenkins.io"
-  chart      = "jenkins/jenkins"
+  chart      = "jenkins"
  # version    = "1.9.18"
   timeout    = 1200
   values = [data.local_file.helm_chart_values.content]
