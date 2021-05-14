@@ -1,4 +1,4 @@
-project_id = "race-jenkins"
+project_id = "race-jenkins-cd"
 environment = "dev"
 subnet1_region = "us-central1"
 subnet1_zone = "us-central1-a"
