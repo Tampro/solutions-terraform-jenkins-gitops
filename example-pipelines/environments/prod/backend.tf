@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "race-jenkins-cd-tfstate"
+    bucket = "race-jenkins-cicd-tfstate"
     prefix = "env/prod"
   }
 }

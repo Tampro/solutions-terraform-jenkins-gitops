@@ -1,7 +1,7 @@
 
 
-project_id = "race-jenkins-cd"
-tfstate_gcs_backend = "race-jenkins-cd-tfstate"
+project_id = "race-jenkins-cicd"
+tfstate_gcs_backend = "race-jenkins-cicd-tfstate"
 region = "us-central1"
 zones = ["us-central1-a"]
 ip_range_pods_name = "ip-range-pods"
